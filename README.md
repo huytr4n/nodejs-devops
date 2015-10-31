@@ -12,4 +12,6 @@
 
 /backend/controllers: contains api routings & controllers scripts.
 
-/backend/utils/: contains all others scripts.
+/backend/utils: contains all others scripts.
+
+/backend/config: contains configs files
