@@ -3,7 +3,8 @@
  */
 var express = require('express'),
     app = express(),
-    port = process.env.PORT || 9090;
+    config = require('../config/'),
+    port = config.get('app:port');
 
 // dumpmy
 app.get('/dumpmy', function (req, res) {
@@ -15,6 +16,7 @@ app.get('/dumpmy', function (req, res) {
  */
 module.exports = {
   start: function (fn) {
+    console.log('start application at port', port);
     app.listen(port, fn);
   }
 };
