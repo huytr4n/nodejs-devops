@@ -1,0 +1,6 @@
+#!/usr/bin/env node
+var index = require('../server/');
+
+index.start(function () {
+  console.log('server is started');
+});
