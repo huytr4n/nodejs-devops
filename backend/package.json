@@ -2,7 +2,8 @@
   "name": "best-practice",
   "version": "0.0.1",
   "scripts": {
-    "start": "node ./bin/start"
+    "start": "node ./bin/start",
+    "test": "lab"
   },
   "dependencies": {
     "async": "1.5.0",
@@ -10,5 +11,8 @@
     "mongoose": "4.2.3",
     "nconf": "0.8.2",
     "underscore": "1.8.3"
+  },
+  "devDependencies": {
+    "lab": "^7.1.0"
   }
 }
