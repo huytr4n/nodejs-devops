@@ -1,11 +1,28 @@
 {
   "name": "best-practice",
   "version": "0.0.1",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node ./bin/start",
+    "test": "lab",
+    "lint": "xo --space",
+    "inspect": "jsinspect"
+  },
   "dependencies": {
     "async": "1.5.0",
     "express": "4.13.3",
     "mongoose": "4.2.3",
     "nconf": "0.8.2",
-    "underscore": "1.8.3"
-  }
+    "underscore": "1.8.3",
+    "xo": "^0.10.1"
+  },
+  "devDependencies": {
+    "lab": "^7.1.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "author": "Huy Tran",
+  "license": "ISC",
+  "description": ""
 }
