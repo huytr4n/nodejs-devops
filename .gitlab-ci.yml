@@ -1,4 +1,5 @@
 before_script:
+  - cd backend/
   - sudo npm install
 testing:
   script:
