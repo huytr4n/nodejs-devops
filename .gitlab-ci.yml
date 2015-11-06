@@ -1,6 +1,3 @@
 test:
   script:
-  - apt-get update -qy
-  - apt-get install -y nodejs
-  - npm install lab -g
   - npm test
