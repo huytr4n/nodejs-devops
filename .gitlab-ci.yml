@@ -1,5 +1,5 @@
-test:
+before_script:
+  - sudo npm install
+testing:
   script:
-  - cd /vagrant/builds/dd11b2a1/0/g-huytran/nodejs-gitlabci-practice/backend
-  - npm install
   - npm test
