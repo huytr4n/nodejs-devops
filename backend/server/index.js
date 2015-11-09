@@ -1,10 +1,10 @@
 /**
  * Main point of server
  */
-var express = require('express'),
-    app = express(),
-    config = require('../config/'),
-    port = config.get('app:port');
+var express = require('express');
+var config = require('../config/');
+var app = express();
+var port = config.get('app:port');
 
 // dumpmy
 app.get('/dumpmy', function (req, res) {
