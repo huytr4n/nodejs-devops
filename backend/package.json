@@ -2,6 +2,15 @@
   "name": "best-practice",
   "version": "0.0.1",
   "main": "server/index.js",
+  "xo": {
+    "rule": {
+      "one-var": [0, "never"],
+      "no-unused-expressions": 0,
+      "key-spacing": [0, { "align": "colon" }],
+      "no-lonely-if": 1,
+      "no-unused-vars": 1
+    }
+  },
   "scripts": {
     "start": "node ./bin/start",
     "test": "lab",
