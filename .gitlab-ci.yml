@@ -1,12 +1,7 @@
 before_script:
   - sh install.sh
   - cd backend/
-
-install_modules:
-  script:
-    - npm install
-  only:
-    - develop
+  - npm install
 
 unit_test:
   script:
