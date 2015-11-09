@@ -1,6 +1,8 @@
 before_script:
   - cd backend/
-  - sudo npm install
+  - npm install
+  - sudo npm install -g xo lab
 testing:
   script:
   - npm test
+  - npm lint
