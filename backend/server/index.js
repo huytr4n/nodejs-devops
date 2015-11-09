@@ -11,6 +11,11 @@ app.get('/dumpmy', function (req, res) {
   return res.send({status: 200, message: 'This is dumpmy api'});
 });
 
+// index
+app.get('/', function (req, res) {
+  return res.send({status: 200, message: 'Index page is simple'});
+});
+
 /**
  * Expose.
  */
