@@ -1,9 +1,19 @@
 before_script:
   - sh install.sh
   - cd backend/
-  - npm install
 
-general_testing:
+install_modules:
   script:
-  - npm test
-  - npm run lint
+    - npm install
+  only:
+    - develop
+
+unit_test:
+  script:
+    - npm test
+  only:
+    - develop
+
+jslint:
+  script:
+    - npm run lint
