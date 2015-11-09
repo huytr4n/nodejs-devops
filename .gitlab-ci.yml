@@ -6,4 +6,4 @@ before_script:
 general_testing:
   script:
   - npm test
-  - npm lint
+  - npm run lint
