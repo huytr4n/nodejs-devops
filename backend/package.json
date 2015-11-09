@@ -4,9 +4,17 @@
   "main": "server/index.js",
   "xo": {
     "rule": {
-      "one-var": [0, "never"],
+      "one-var": [
+        0,
+        "never"
+      ],
       "no-unused-expressions": 0,
-      "key-spacing": [0, { "align": "colon" }],
+      "key-spacing": [
+        0,
+        {
+          "align": "colon"
+        }
+      ],
       "no-lonely-if": 1,
       "no-unused-vars": 1
     }
@@ -23,6 +31,7 @@
     "lab": "^7.2.0",
     "mongoose": "4.2.3",
     "nconf": "0.8.2",
+    "request": "^2.65.0",
     "underscore": "1.8.3",
     "xo": "^0.10.1"
   },
