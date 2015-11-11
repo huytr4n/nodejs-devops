@@ -1,0 +1,10 @@
+{
+  "name": "staging",
+  "json_class": "Chef::Environment",
+  "chef_type": "environment",
+  "default_attributes": {
+    "nodejs": {
+      "npm_packages": ["xo", "lab", "forever", "express-generator"]
+    }
+  }
+}
