@@ -1,6 +1,12 @@
 #!/usr/bin/env node
-var index = require('../server/');
+var DashboardServer = require('../server/');
+var config = require('../config');
 
-index.start(function () {
-  console.log('server is started');
+var dashboardServer =  new DashboardServer({
+  configs: config
+});
+
+// start server
+dashboardServer.start(function () {
+
 });
