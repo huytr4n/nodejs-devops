@@ -11,10 +11,10 @@ var productSchema = new Schema({
   price: Number,
   currency: String,
   type: String,
-  createdAt: {type: Date, default: new Date}
+  createdAt: {type: Date, default: new Date()}
 });
 
 // make expose id for serialize
-productSchema.set('toJSON', { virtuals: true });
+productSchema.set('toJSON', {virtuals: true});
 
 module.exports = mongoose.model('DBProduct', productSchema);

@@ -2,7 +2,7 @@
 var DashboardServer = require('../server/');
 var config = require('../config');
 
-var dashboardServer =  new DashboardServer({
+var dashboardServer = new DashboardServer({
   configs: config
 });
 
