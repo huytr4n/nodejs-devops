@@ -1,7 +1,11 @@
 {
   "name": "best-practice",
-  "version": "0.0.1",
-  "main": "server/index.js",
+  "version": "1.0.0",
+  "description": "npm packages for node best practice",
+  "main": "bin/start",
+  "directories": {
+    "test": "test"
+  },
   "xo": {
     "rule": {
       "one-var": [
@@ -25,26 +29,23 @@
     "lint": "xo --space",
     "inspect": "jsinspect"
   },
+  "author": "Huy Tran",
+  "license": "ISC",
   "dependencies": {
-    "async": "1.5.0",
+    "async": "^1.5.0",
     "basejs": "^1.1.1",
     "body-parser": "^1.14.1",
     "code": "^2.0.1",
-    "express": "4.13.3",
-    "lab": "^7.2.0",
+    "express": "^4.13.3",
+    "lab": "^7.3.0",
     "method-override": "^2.3.5",
-    "mongoose": "4.2.3",
+    "mongoose": "^4.2.5",
     "mongoose-pagination": "^1.0.0",
     "morgan": "^1.6.1",
-    "nconf": "0.8.2",
+    "nconf": "^0.8.2",
     "request": "^2.65.0",
-    "underscore": "1.8.3",
+    "underscore": "^1.8.3",
     "winston": "^2.1.0",
     "xo": "^0.10.1"
-  },
-  "directories": {
-    "test": "test"
-  },
-  "author": "Huy Tran",
-  "license": "ISC"
+  }
 }
