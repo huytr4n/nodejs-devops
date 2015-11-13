@@ -27,21 +27,42 @@
   },
   "dependencies": {
     "async": "1.5.0",
+    "basejs": "^1.1.1",
+    "body-parser": "^1.14.1",
+    "code": "^2.0.1",
     "express": "4.13.3",
     "lab": "^7.2.0",
+    "method-override": "^2.3.5",
     "mongoose": "4.2.3",
+    "mongoose-pagination": "^1.0.0",
+    "morgan": "^1.6.1",
     "nconf": "0.8.2",
     "request": "^2.65.0",
     "underscore": "1.8.3",
+    "winston": "^2.1.0",
     "xo": "^0.10.1"
-  },
-  "devDependencies": {
-    "lab": "^7.1.0"
   },
   "directories": {
     "test": "test"
   },
   "author": "Huy Tran",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "bundleDependencies": [
+    "async",
+    "basejs",
+    "body-parser",
+    "code",
+    "express",
+    "lab",
+    "method-override",
+    "mongoose",
+    "mongoose-pagination",
+    "morgan",
+    "nconf",
+    "request",
+    "underscore",
+    "winston",
+    "xo"
+  ]
 }
