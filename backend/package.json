@@ -46,23 +46,5 @@
     "test": "test"
   },
   "author": "Huy Tran",
-  "license": "ISC",
-  "description": "",
-  "bundleDependencies": [
-    "async",
-    "basejs",
-    "body-parser",
-    "code",
-    "express",
-    "lab",
-    "method-override",
-    "mongoose",
-    "mongoose-pagination",
-    "morgan",
-    "nconf",
-    "request",
-    "underscore",
-    "winston",
-    "xo"
-  ]
+  "license": "ISC"
 }
