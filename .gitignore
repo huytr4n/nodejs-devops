@@ -31,6 +31,9 @@ Temporary Items
 ### ChefCookbook ###
 .vagrant
 cookbooks/
+Berksfile.lock
+precise64.box
+ubuntu-14.04-amd64-vbox.box
 
 # Bundler
 bin/*
