@@ -2,7 +2,9 @@
   "application": "node.js",
   "name": "best-practice",
   "database": {
-    "connectionString": "mongodb://127.0.0.1:27017/practice"
+    "mongodb": {
+      "connectionString": "mongodb://127.0.0.1:27017/practice"
+    }
   },
   "app": {
     "port": 9090

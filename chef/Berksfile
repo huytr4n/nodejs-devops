@@ -1,0 +1,7 @@
+source "https://supermarket.getchef.com"
+
+cookbook "git"
+cookbook "apt"
+cookbook "nodejs"
+cookbook "nodejs-setup"
+cookbook 'mongodb3', '~> 2.0.0'

@@ -1,6 +1,12 @@
-var Lab = require('lab');
-var lab = exports.lab = Lab.script();
+// Start server before test
+var DashboardServer = require('../server/');
+var config = require('../config');
 
-lab.test('returns true when 1 + 1 equals 2', function (done) {
-  done();
+var dashboardServer = new DashboardServer({
+  configs: config
+});
+
+// start server
+dashboardServer.start(function () {
+  console.log('server is ready for testing');
 });

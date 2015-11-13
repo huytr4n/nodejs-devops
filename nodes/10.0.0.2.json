@@ -1,0 +1,9 @@
+{
+  "run_list": [
+
+  ],
+  "environment": "staging",
+  "automatic": {
+    "ipaddress": "10.0.0.2"
+  }
+}

@@ -1,29 +1,51 @@
 {
   "name": "best-practice",
-  "version": "0.0.1",
-  "main": "server/index.js",
+  "version": "1.0.0",
+  "description": "npm packages for node best practice",
+  "main": "bin/start",
+  "directories": {
+    "test": "test"
+  },
+  "xo": {
+    "rule": {
+      "one-var": [
+        0,
+        "never"
+      ],
+      "no-unused-expressions": 0,
+      "key-spacing": [
+        0,
+        {
+          "align": "colon"
+        }
+      ],
+      "no-lonely-if": 1,
+      "no-unused-vars": 1
+    }
+  },
   "scripts": {
     "start": "node ./bin/start",
     "test": "lab",
     "lint": "xo --space",
     "inspect": "jsinspect"
   },
-  "dependencies": {
-    "async": "1.5.0",
-    "express": "4.13.3",
-    "lab": "^7.2.0",
-    "mongoose": "4.2.3",
-    "nconf": "0.8.2",
-    "underscore": "1.8.3",
-    "xo": "^0.10.1"
-  },
-  "devDependencies": {
-    "lab": "^7.1.0"
-  },
-  "directories": {
-    "test": "test"
-  },
   "author": "Huy Tran",
   "license": "ISC",
-  "description": ""
+  "dependencies": {
+    "async": "^1.5.0",
+    "basejs": "^1.1.1",
+    "body-parser": "^1.14.1",
+    "code": "^2.0.1",
+    "express": "^4.13.3",
+    "lab": "^7.3.0",
+    "method-override": "^2.3.5",
+    "mongoose": "^4.2.5",
+    "mongoose-pagination": "^1.0.0",
+    "morgan": "^1.6.1",
+    "nconf": "^0.8.2",
+    "request": "^2.65.0",
+    "underscore": "^1.8.3",
+    "winston": "^2.1.0",
+    "xo": "^0.10.1"
+  }
 }
