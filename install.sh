@@ -11,14 +11,17 @@ fi
 
 if ! which lab > /dev/null; then
   echo "#### install lab"
-
   sudo npm install -g lab
 fi
 
 if ! which xo > /dev/null; then
   echo "#### install xo"
-
   sudo npm install -g xo
+fi
+
+if which npm-cache > /dev/null; then
+  echo "### install npm-cache"
+  sudo npm install -g npm-cache
 fi
 
 if ! which mongo > /dev/null; then
