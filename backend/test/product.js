@@ -139,20 +139,20 @@ lab.test('User can get all products', function (done) {
 
     done();
   });
+});
 
-  // DELETE
-  lab.test('User can remove a product', function (done) {
-    request({
-      url: [ROOT_API, '/', product.id].join(''),
-      method: 'DELETE',
-      headers: {
-        'content-type': 'application/json'
-      }
-    }, function (error, res, body) {
-      // status code must be 201
-      Code.expect(res.statusCode).to.equal(204);
+// DELETE
+lab.test('User can remove a product', function (done) {
+  request({
+    url: [ROOT_API, '/', product.id].join(''),
+    method: 'DELETE',
+    headers: {
+      'content-type': 'application/json'
+    }
+  }, function (error, res, body) {
+    // status code must be 201
+    Code.expect(res.statusCode).to.equal(204);
 
-      done();
-    });
+    done();
   });
 });
