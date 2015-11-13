@@ -1,7 +1,7 @@
 before_script:
   - sh install.sh
   - cd backend/
-  - sudo npm install
+  - sudo npm-cache install
 
 unit_test:
   script:
