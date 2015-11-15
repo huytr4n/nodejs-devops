@@ -19,8 +19,9 @@
 
 ### Install needed gem
 
-    gem install knife-solo  
+    gem install knife-solo
     gem install berkshelf
+
 
 ### Init project structure
 
