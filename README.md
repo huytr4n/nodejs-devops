@@ -19,31 +19,31 @@
 
 ### Install needed gem
 
-  gem install knife-solo  
-  gem install berkshelf
+    gem install knife-solo  
+    gem install berkshelf
 
 ### Init project structure
 
-  mkdir <project_name> && cd <project_name>
+    mkdir <project_name> && cd <project_name>
     git clone git@gitlab.asoft-python.com:g-huytran/nodejs-gitlabci-practice.git
 
 
 ### Development env with Vagrant
-  cd vagrant/
-  vagrant up
-  vagrant ssh
+    cd vagrant/
+    vagrant up
+    vagrant ssh
 
-  cd ../chef/
-  sudo knife solo bootstrap vagrant@10.0.0.2 -P vagrant
+    cd ../chef/
+    sudo knife solo bootstrap vagrant@10.0.0.2 -P vagrant
 
 
 ## Testing
 ### Test your code with lab
-  npm test
+    npm test
 
 
 ### JSLint
-  npm run lint
+    npm run lint
 
 
 ## Deployment
