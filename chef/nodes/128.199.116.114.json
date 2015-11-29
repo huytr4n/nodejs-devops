@@ -1,0 +1,12 @@
+{
+  "run_list": [
+    "recipe[apt]",
+    "recipe[nodejs-setup]",
+    "recipe[mongodb3]",
+    "recipe[deployment]"
+  ],
+  "nodejs-setup": {
+    "version": "4.x",
+    "npm_packages": ["xo", "lab", "forever", "npm-cache"]
+  }
+}
