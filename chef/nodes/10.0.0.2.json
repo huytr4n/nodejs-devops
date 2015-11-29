@@ -6,6 +6,6 @@
   ],
   "nodejs-setup": {
     "version": "4.x",
-    "npm_packages": ["xo", "lab", "forever"]
+    "npm_packages": ["xo", "lab", "forever", "npm-cache"]
   }
 }
