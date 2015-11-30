@@ -48,7 +48,16 @@
 
 
 ## Deployment
-TODO
+### With github
+    knife solo boostrap root@[server-ip]
+    or knife solo cook root@[server-ip]
+
+### With rsync
+    node backend/deployment/sync.js --dest=server
+    knife solo boostrap root@[server-ip]
+    or knife solo cook root@[server-ip]
+
+Note: a JSON file of --dest param must be existed on config folder
 
 
 ## Folder structure

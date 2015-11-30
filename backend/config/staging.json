@@ -1,0 +1,17 @@
+{
+  "application": "node.js",
+  "name": "best-practice",
+  "database": {
+    "mongodb": {
+      "connectionString": "mongodb://127.0.0.1:27017/practice"
+    }
+  },
+  "app": {
+    "port": 9090
+  },
+  "server": {
+    "ip": "128.199.116.114",
+    "ssh_user": "root",
+    "ssh_source": "/root/src"
+  }
+}
