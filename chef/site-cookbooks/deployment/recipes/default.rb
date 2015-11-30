@@ -7,7 +7,9 @@
 # All rights reserved - Do Not Redistribute
 #
 
-if node['deployment']['rsync']
+source_code_dir = ''
+
+if node['deployment']['rsync'] == false
   # create folder
   directory node['deployment']['dir'] do
     owner 'root'
@@ -42,13 +44,18 @@ if node['deployment']['rsync']
     shallow_clone false
     action :deploy
   end
+
+  # set source dir
+  source_code_dir = node['deployment']['current']
+else
+  source_code_dir = node['deployment']['rsync_folder']
 end
 
 # start server
 bash 'Start backend server' do
   user 'root'
   code <<-EOH
-    cd #{node['deployment']['current']}/backend/
+    cd #{source_code_dir}
     npm install
     forever stop bin/start
     forever start bin/start
