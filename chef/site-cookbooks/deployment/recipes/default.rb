@@ -26,10 +26,10 @@ if node['deployment']['sshkey']
 end
 
 # clone code
-deploy_branch node["deployment"]["dir"] do
+deploy_branch node['deployment']['dir'] do
   scm_provider Chef::Provider::Git
-  repo node["deployment"]["git"]
-  revision node["deployment"]["branch"] 
+  repo node['deployment']['git']
+  revision node['deployment']['branch']
 
   # Clear out all the symlink attributes
   symlink_before_migrate.clear
@@ -40,4 +40,15 @@ deploy_branch node["deployment"]["dir"] do
   enable_submodules true
   shallow_clone false
   action :deploy
+end
+
+# start server
+bash 'Start backend server' do
+  user 'root'
+  code <<-EOH
+    cd #{node['deployment']['current']}/backend/
+    npm install
+    forever stop bin/start
+    forever start bin/start
+  EOH
 end
